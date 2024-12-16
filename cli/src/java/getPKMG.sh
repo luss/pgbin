@@ -1,1 +1,0 @@
-../cluster/getPKMG.sh

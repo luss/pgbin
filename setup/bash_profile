@@ -1,0 +1,19 @@
+# PGBIN for ~/.bash... ############################################################
+alias bp="cd ~/dev/pgbin/cli; . ./bp.sh"
+alias ver="vi ~/dev/pgbin/cli/src/conf/versions.sql"
+
+export REGION=us-west-2
+export BUCKET=s3://pgbin-download
+
+export DEV=$HOME/dev
+export IN=$DEV/in
+export OUT=$DEV/out
+export HIST=$DEV/history
+export PGB=$DEV/pgbin
+export SRC=$IN/sources
+export BLD=/opt/pgbin-build/pgbin/bin
+
+export DEVEL=$PGB/cli/devel
+export PG=$DEVEL/pg
+export CLI=$PGB/cli/scripts
+export REPO=http://localhost:8000

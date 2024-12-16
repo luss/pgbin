@@ -1,14 +1,37 @@
-# PGBIN
+# README for IO #
 
-## Create build environment on el9
+IO is the API & CLI for PGSQL.IO
 
-### 1.) run ./setupInitial.sh to configure OS environment
+## Usage ##
+```
+io command [component] [options]
+```
 
-### 2.) configure your ~/.aws/config credentials
+## Informational Commands ##
+```
+  help      - Display help file
+  info      - Display OS or component information
+  status    - Display status of installed server components
+  list      - Display available/installed components 
+```
 
-### 3.) run ./setupBLD-IN.sh to pull in the IN directory from S3
+## Service Control Commands ##
+```
+  start     - Start server components
+  stop      - Stop server components
+  reload    - Reload server configuration files (without a restart)
+  restart   - Stop & then start server components
+  enable    - Enable a component
+  disable   - Disable a server server component from starting automatically
+  config    - Configure a component
+  init      - Initialize a component
+```
 
-### 4.) Setup Src builds for PGBIN from devel/pgbin/build
-       + installOracleInstantClient.sh
-       + installCppDriver.sh
-       sharedLibs.sh
+## Software Install & Update Commands ##
+```
+  update    - Retrieve new lists of components
+  upgrade   - Perform an upgrade of a component
+  install   - Install (or re-install) a component  
+  remove    - Un-install component   
+  clean     - Delete downloaded component files
+```
